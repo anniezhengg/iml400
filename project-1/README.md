@@ -1,9 +1,9 @@
 # Cybernetic Garden
 
-![demo](https://github.com/Qianqianye/iml400/blob/main/cybernetic-garden/asset/cybernetic-garden-demo.gif)
+![demo](https://github.com/anniezhengg/iml400/blob/master/project-1/asset/project-1-demo.gif)
 
-[Cybernetic Garden](http://qianqianye.github.io/iml400/cybernetic-garden/) is an interactive web page inspired by the poem All Watched Over by Machines of Loving Grace by by Richard Brautigan.
+[Cybernetic Garden](https://anniezhengg.github.io/iml400/project-1/) is an interactive web page inspired by the poem All Watched Over by Machines of Loving Grace by by Richard Brautigan.
 
 ### Description
 
-Write your description here.
+My take on this was to create a digital care space that blends real elements and technological ones through archival and found images. The collage of images are draggable, allowing the user to "reinvent" or reorganize this digital face. Underneath, the user can ask the Magic 8 Ball about themselves. As well, the user can hover over the picture of baby me for a brief description or click around on the background for an interactive, starry surprise. 
