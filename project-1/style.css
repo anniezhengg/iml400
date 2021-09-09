@@ -118,14 +118,7 @@ marquee.tw2 {
   border: 3.5px solid black;
   padding: 15px;
   background: white;
-}
-
-.podcast {
-  position: fixed;
   z-index: 1;
-  left: 40vw;
-  top: 80vh;
-  
 }
 
 /* images */
@@ -153,7 +146,7 @@ marquee.tw2 {
   width: 40vh;
   left: 40vh;
   top: 10vh;
-  z-index: 2;
+  z-index: 4;
   cursor: pointer;
 }
 
@@ -163,6 +156,7 @@ marquee.tw2 {
   top: 30vh;
   left: 10vh;
   cursor: pointer;
+  z-index: 2;
 }
 
 #img5 {
@@ -171,6 +165,7 @@ marquee.tw2 {
   top: 50vh;
   z-index: 2;
   cursor: pointer;
+  z-index: 4;
 }
 
 #img6 {
@@ -179,6 +174,7 @@ marquee.tw2 {
   top: 60vh;
   left: 20vh;
   cursor: pointer;
+  z-index: 3;
 }
 
 #img7 {
@@ -186,6 +182,7 @@ marquee.tw2 {
   width: 30vh;
   top: 50vh;
   cursor: pointer;
+  z-index: 2;
 }
 
 #img8 {
@@ -195,6 +192,7 @@ marquee.tw2 {
   right: 90vh;
   top: 50vh;
   cursor: pointer;
+  z-index: 4;
 }
 
 #img9 {
@@ -203,6 +201,7 @@ marquee.tw2 {
   cursor: pointer;
   top: 40vh;
   right: 7vh;
+  z-index: 3;
 }
 
 #img10 {
@@ -211,6 +210,7 @@ marquee.tw2 {
   top: 65vh;
   right: 5vh;
   cursor: pointer;
+  z-index: 2;
 }
 
 #img11 {
@@ -237,6 +237,7 @@ marquee.tw2 {
   top: 10vh;
   right: 12vh;
   cursor: pointer;
+  z-index: 2;
 }
 
 #img14 {
@@ -245,6 +246,7 @@ marquee.tw2 {
   top: 8vh;
   left: 12vh;
   cursor: pointer;
+  z-index: 2;
 }
 
 #img15 {
