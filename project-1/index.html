@@ -1,34 +1,69 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="bcursor">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Cybernetic Garden?</title>
+    <title>Annie's Cybernetic Garden</title>
+    <link rel="icon" href="asset/cupcake.png" type="image/png" sizes="16x16">
     <link rel="stylesheet" href="style.css"></link>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="main.js"></script>
+    <script src="stars.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.1.9/p5.js"></script>
   </head>
-  <body>
+  <body class="gradient-body">
+    <div style="background-color:#2A75A9;"></div>
+    <div style="background-color:#274257;"></div>
+    <div style="background-color:#644436;"></div>
+    <div style="background-color:#8F6048;"></div>
     <div>
-      <marquee class="tw1" loop="infinite" >[REINVENT YOUR DIGITAL SELF] [REINVENT YOUR DIGITAL SELF] [REINVENT YOUR DIGITAL SELF] [REINVENT YOUR DIGITAL SELF] [REINVENT YOUR DIGITAL SELF] [REINVENT YOUR DIGITAL SELF] [REINVENT YOUR DIGITAL SELF] [REINVENT YOUR DIGITAL SELF] [REINVENT YOUR DIGITAL SELF] [REINVENT YOUR DIGITAL SELF] [REINVENT YOUR DIGITAL SELF] [REINVENT YOUR DIGITAL SELF] [REINVENT YOUR DIGITAL SELF] [REINVENT YOUR DIGITAL SELF] [REINVENT YOUR DIGITAL SELF] [REINVENT YOUR DIGITAL SELF] [REINVENT YOUR DIGITAL SELF] [REINVENT YOUR DIGITAL SELF] [REINVENT YOUR DIGITAL SELF] [REINVENT YOUR DIGITAL SELF] [REINVENT YOUR DIGITAL SELF] [REINVENT YOUR DIGITAL SELF] [REINVENT YOUR DIGITAL SELF] [REINVENT YOUR DIGITAL SELF] [REINVENT YOUR DIGITAL SELF] [REINVENT YOUR DIGITAL SELF] [REINVENT YOUR DIGITAL SELF] [REINVENT YOUR DIGITAL SELF] [REINVENT YOUR DIGITAL SELF] [REINVENT YOUR DIGITAL SELF] [REINVENT YOUR DIGITAL SELF] [REINVENT YOUR DIGITAL SELF]</marquee>
-      <marquee class="tw2" loop="infinite" >[REINVENT YOUR DIGITAL SELF] [REINVENT YOUR DIGITAL SELF] [REINVENT YOUR DIGITAL SELF] [REINVENT YOUR DIGITAL SELF] [REINVENT YOUR DIGITAL SELF] [REINVENT YOUR DIGITAL SELF] [REINVENT YOUR DIGITAL SELF] [REINVENT YOUR DIGITAL SELF] [REINVENT YOUR DIGITAL SELF] [REINVENT YOUR DIGITAL SELF] [REINVENT YOUR DIGITAL SELF] [REINVENT YOUR DIGITAL SELF] [REINVENT YOUR DIGITAL SELF] [REINVENT YOUR DIGITAL SELF] [REINVENT YOUR DIGITAL SELF] [REINVENT YOUR DIGITAL SELF] [REINVENT YOUR DIGITAL SELF] [REINVENT YOUR DIGITAL SELF] [REINVENT YOUR DIGITAL SELF] [REINVENT YOUR DIGITAL SELF] [REINVENT YOUR DIGITAL SELF] [REINVENT YOUR DIGITAL SELF] [REINVENT YOUR DIGITAL SELF] [REINVENT YOUR DIGITAL SELF] [REINVENT YOUR DIGITAL SELF] [REINVENT YOUR DIGITAL SELF] [REINVENT YOUR DIGITAL SELF] [REINVENT YOUR DIGITAL SELF] [REINVENT YOUR DIGITAL SELF] [REINVENT YOUR DIGITAL SELF] [REINVENT YOUR DIGITAL SELF] [REINVENT YOUR DIGITAL SELF]</marquee>
+      <marquee class="tw1" loop="infinite" >[REINVENT YOUR DIGITAL SELF] [REINVENT YOUR DIGITAL SELF] [REINVENT YOUR DIGITAL SELF] [REINVENT YOUR DIGITAL SELF] [REINVENT YOUR DIGITAL SELF] [REINVENT YOUR DIGITAL SELF] [REINVENT YOUR DIGITAL SELF] [REINVENT YOUR DIGITAL SELF] [REINVENT YOUR DIGITAL SELF] [REINVENT YOUR DIGITAL SELF] [REINVENT YOUR DIGITAL SELF] [REINVENT YOUR DIGITAL SELF] [REINVENT YOUR DIGITAL SELF][REINVENT YOUR DIGITAL SELF] [REINVENT YOUR DIGITAL SELF] [REINVENT YOUR DIGITAL SELF] [REINVENT YOUR DIGITAL SELF] [REINVENT YOUR DIGITAL SELF] [REINVENT YOUR DIGITAL SELF] [REINVENT YOUR DIGITAL SELF] [REINVENT YOUR DIGITAL SELF] [REINVENT YOUR DIGITAL SELF] [REINVENT YOUR DIGITAL SELF] [REINVENT YOUR DIGITAL SELF] [REINVENT YOUR DIGITAL SELF] [REINVENT YOUR DIGITAL SELF] [REINVENT YOUR DIGITAL SELF] [REINVENT YOUR DIGITAL SELF] [REINVENT YOUR DIGITAL SELF] [REINVENT YOUR DIGITAL SELF] [REINVENT YOUR DIGITAL SELF] [REINVENT YOUR DIGITAL SELF] [REINVENT YOUR DIGITAL SELF] [REINVENT YOUR DIGITAL SELF] [REINVENT YOUR DIGITAL SELF] [REINVENT YOUR DIGITAL SELF] [REINVENT YOUR DIGITAL SELF] [REINVENT YOUR DIGITAL SELF] [REINVENT YOUR DIGITAL SELF] [REINVENT YOUR DIGITAL SELF] [REINVENT YOUR DIGITAL SELF] [REINVENT YOUR DIGITAL SELF] [REINVENT YOUR DIGITAL SELF] [REINVENT YOUR DIGITAL SELF] [REINVENT YOUR DIGITAL SELF] [REINVENT YOUR DIGITAL SELF] [REINVENT YOUR DIGITAL SELF] [REINVENT YOUR DIGITAL SELF] [REINVENT YOUR DIGITAL SELF] [REINVENT YOUR DIGITAL SELF] [REINVENT YOUR DIGITAL SELF] [REINVENT YOUR DIGITAL SELF]</marquee>
+      <marquee class="tw2" loop="infinite" >[REINVENT YOUR DIGITAL SELF] [REINVENT YOUR DIGITAL SELF] [REINVENT YOUR DIGITAL SELF] [REINVENT YOUR DIGITAL SELF] [REINVENT YOUR DIGITAL SELF] [REINVENT YOUR DIGITAL SELF] [REINVENT YOUR DIGITAL SELF] [REINVENT YOUR DIGITAL SELF] [REINVENT YOUR DIGITAL SELF] [REINVENT YOUR DIGITAL SELF] [REINVENT YOUR DIGITAL SELF] [REINVENT YOUR DIGITAL SELF] [REINVENT YOUR DIGITAL SELF] [REINVENT YOUR DIGITAL SELF] [REINVENT YOUR DIGITAL SELF] [REINVENT YOUR DIGITAL SELF] [REINVENT YOUR DIGITAL SELF] [REINVENT YOUR DIGITAL SELF] [REINVENT YOUR DIGITAL SELF] [REINVENT YOUR DIGITAL SELF] [REINVENT YOUR DIGITAL SELF] [REINVENT YOUR DIGITAL SELF] [REINVENT YOUR DIGITAL SELF] [REINVENT YOUR DIGITAL SELF] [REINVENT YOUR DIGITAL SELF] [REINVENT YOUR DIGITAL SELF] [REINVENT YOUR DIGITAL SELF] [REINVENT YOUR DIGITAL SELF] [REINVENT YOUR DIGITAL SELF] [REINVENT YOUR DIGITAL SELF] [REINVENT YOUR DIGITAL SELF] [REINVENT YOUR DIGITAL SELF] [REINVENT YOUR DIGITAL SELF] [REINVENT YOUR DIGITAL SELF] [REINVENT YOUR DIGITAL SELF] [REINVENT YOUR DIGITAL SELF] [REINVENT YOUR DIGITAL SELF] [REINVENT YOUR DIGITAL SELF] [REINVENT YOUR DIGITAL SELF] [REINVENT YOUR DIGITAL SELF] [REINVENT YOUR DIGITAL SELF] [REINVENT YOUR DIGITAL SELF] [REINVENT YOUR DIGITAL SELF] [REINVENT YOUR DIGITAL SELF] [REINVENT YOUR DIGITAL SELF] [REINVENT YOUR DIGITAL SELF] [REINVENT YOUR DIGITAL SELF] [REINVENT YOUR DIGITAL SELF] [REINVENT YOUR DIGITAL SELF] [REINVENT YOUR DIGITAL SELF] [REINVENT YOUR DIGITAL SELF] [REINVENT YOUR DIGITAL SELF]</marquee>
 
+    </div>
+    
+    <div id="content">
+      <h1>You've Found the Magic 8 Ball!</h1>
+      <p id="info">Ask me what you want to know and click on the Magic 8 Ball</p>
+      <input type="text" id="question" />
+      <div id="eight-ball" class="eight-ball">
+        <div class="answer">
+          <p id="eight">8</p>
+          <p id="answer"></p>
+        </div>
+      </div>
     </div>
       
     <div>
-      <img id="img1" src="asset/hair.png" />
-      <img id="img2" src="asset/eye1.png"/>
+      <img id="img1" src="asset/hair.png" /> 
+      <img id="img2" src="asset/eye1.png"/>  
       <img id="img3" src="asset/eye2.png"/>
       <img id="img4" src="asset/fishie.png"/>
       <img id="img5" src="asset/lips.png"/>
       <img id="img6" src="asset/playlists.png"/>
       <img id="img7" src="asset/groovy.png"/>
       <img id="img8" src="asset/clouds.png"/>
-      <!-- <img id="img9" src="asset/facebook.png"/> -->
+      <img id="img9" src="asset/facebook.png"/>
       <img id="img10" src="asset/songs.png"/>
       <img id="img11" src="asset/email.png"/>
-      <img id="img12" src="asset/nose.png"/>
+      <img id="img12" src="asset/nose.jpeg"/>
       <img id="img13" src="asset/mushroom.png"/>
-      <!-- <img id="img14" src="asset/chain.png"/> -->
-    </div>
+      <img id="img14" src="asset/chain.png"/>
+      <img id="img15" src="asset/tv.png" />
+      <img id="img16" src="asset/profile.png" />
+      <img id="img17" src="asset/iphone.png"/>
+</div>
+<div class="info" style="display: none;">
+A digital care space that blends past and present  <br> archival social media posts and photos, <br>encouraging users to reimagine their digital selves.
+ <br> Inspired by Richard Brautigan's poem <br> <i>"All Watched Over By Machines Of Loving Grace</i>." 
+</div>
+
+<div>
+  <img class="img18" src="asset/me.png" />
+</div>
+  
+
   </body>
 </html>

@@ -8,25 +8,135 @@ canvas {
   z-index: -1;
 }
 
+.bcursor {
+  cursor: url("asset/resizedImagePink.png"), auto;
+}
+
+@font-face {
+  font-family: myFirstFont;
+  src: url(asset/Retro_Rescued.woff2);
+}
+
+/* div {
+  font-family: myFirstFont;
+  font-size: 10vh;
+  color: white;
+} */
+
+/* gradient */
+.gradient-body {
+  background: #afa8f0;
+  -webkit-font-smoothing: antialiased;
+  background: -webkit-gradient(
+    linear,
+    left top,
+    right top,
+    from(rgba(155, 206, 238, 1)),
+    color-stop(30%, rgba(255, 245, 204, 1)),
+    color-stop(70%, rgba(145, 255, 141, 1)),
+    to(rgba(185, 141, 255, 1))
+  );
+  background: -webkit-linear-gradient(
+    left,
+    rgba(168, 237, 234, 1) 0%,
+    rgba(255, 245, 204, 1) 30%,
+    rgba(145, 255, 141, 1) 70%,
+    rgba(185, 141, 255, 1) 100%
+  );
+  background: -o-linear-gradient(
+    left,
+    rgba(168, 237, 234, 1) 0%,
+    rgba(255, 245, 204, 1) 30%,
+    rgba(145, 255, 141, 1) 70%,
+    rgba(185, 141, 255, 1) 100%
+  );
+  background: linear-gradient(
+    90deg,
+    rgba(168, 237, 234, 1) 0%,
+    rgba(221, 214, 243, 1) 30%,
+    rgba(255, 245, 204, 1) 70%,
+    rgba(252, 189, 255, 1) 100%
+  );
+  background-size: 400% 400%;
+  -webkit-animation: gradient 20s ease infinite;
+  animation: gradient 20s ease infinite;
+}
+
+@-webkit-keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
+}
 marquee.tw1 {
   position: absolute;
   top: 0;
   left: 0;
+  font-family: myFirstFont;
+  font-size: 10vh;
+  color: white;
 }
 
 marquee.tw2 {
   position: absolute;
   bottom: 0.5vh;
   left: 0;
+  font-family: myFirstFont;
+  font-size: 10vh;
+  color: white;
+}
+
+.info {
+  display: none;
+  position: fixed;
+  font-family: myFirstFont;
+  font-size: 16px;
+  top: 40vh;
+  right: 5vw;
+  text-align: center;
+  border: 3.5px solid black;
+  padding: 15px;
+  background: white;
+}
+
+.podcast {
+  position: fixed;
+  z-index: 1;
+  left: 40vw;
+  top: 80vh;
+  
 }
 
 /* images */
+
 #img1 {
   position: relative;
   width: 60vh;
   left: 60vh;
   top: 0vh;
-  z-index: 1;
+  z-index: 3;
+  cursor: pointer;
 }
 
 #img2 {
@@ -34,7 +144,8 @@ marquee.tw2 {
   width: 40vh;
   right: 30vh;
   top: 30vh;
-  z-index: 2;
+  z-index: 4;
+  cursor: pointer;
 }
 
 #img3 {
@@ -43,6 +154,7 @@ marquee.tw2 {
   left: 40vh;
   top: 10vh;
   z-index: 2;
+  cursor: pointer;
 }
 
 #img4 {
@@ -50,13 +162,15 @@ marquee.tw2 {
   width: 30vh;
   top: 30vh;
   left: 10vh;
+  cursor: pointer;
 }
 
 #img5 {
   position: relative;
   width: 40vh;
-  top: 60vh;
+  top: 50vh;
   z-index: 2;
+  cursor: pointer;
 }
 
 #img6 {
@@ -64,12 +178,14 @@ marquee.tw2 {
   width: 50vh;
   top: 60vh;
   left: 20vh;
+  cursor: pointer;
 }
 
 #img7 {
   position: absolute;
   width: 30vh;
   top: 50vh;
+  cursor: pointer;
 }
 
 #img8 {
@@ -78,11 +194,15 @@ marquee.tw2 {
   z-index: 2;
   right: 90vh;
   top: 50vh;
+  cursor: pointer;
 }
 
 #img9 {
   position: absolute;
   width: 50vh;
+  cursor: pointer;
+  top: 40vh;
+  right: 7vh;
 }
 
 #img10 {
@@ -90,6 +210,7 @@ marquee.tw2 {
   width: 50vh;
   top: 65vh;
   right: 5vh;
+  cursor: pointer;
 }
 
 #img11 {
@@ -98,13 +219,16 @@ marquee.tw2 {
   z-index: 3;
   top: 10vh;
   right: 10vh;
+  cursor: pointer;
 }
 
 #img12 {
   position: absolute;
-  width: 30vh;
+  width: 40vh;
   top: 40vh;
   right: 65vh;
+  z-index: 2;
+  cursor: pointer;
 }
 
 #img13 {
@@ -112,9 +236,109 @@ marquee.tw2 {
   width: 40vh;
   top: 10vh;
   right: 12vh;
+  cursor: pointer;
 }
 
 #img14 {
-  position: relative;
+  position: absolute;
+  width: 60vh;
+  top: 8vh;
+  left: 12vh;
+  cursor: pointer;
+}
+
+#img15 {
+  position: absolute;
   width: 40vh;
+  top: 30vh;
+  z-index: 5;
+  cursor: pointer;
+}
+
+#img16 {
+  position: absolute;
+  width: 60vh;
+  top: 5vh;
+  left: 50vh;
+  z-index: 6;
+  cursor: pointer;
+}
+
+#img17 {
+  position: absolute;
+  width: 40vh;
+  top: 50vh;
+  left: 20vh;
+  z-index: 5;
+  cursor: pointer;
+}
+
+.img18 {
+  position: absolute;
+  z-index: 1;
+  top: 50vh;
+  width: 20vh;
+  right: 60vh;
+  cursor: help;
+}
+
+/* magic 8 ball */
+#content {
+  width: 60vh;
+  /* border: 1vh dotted black; */
+  text-align: center;
+  font-family: "Helvetica Neue", arial;
+  font-weight: 100;
+  position: absolute;
+  top: 50vh;
+  left: 50vw;
+  transform: translate(-50%, -50%);
+  font-family: myFirstFont;
+  font-size: 2vh;
+  color: black;
+}
+
+div.eight-ball {
+  background-color: black;
+  border: 0.1vh solid black;
+  border-radius: 50%;
+  width: 30vh;
+  height: 30vh;
+  margin: 0 auto;
+  margin-bottom: 3vh;
+  margin-top: 3vh;
+  font-size: 1.5vh;
+}
+
+div.answer {
+  background-color: #333;
+  border: 1px solid #333;
+  border-radius: 50%;
+  width: 50%;
+  height: 50%;
+  margin: 25% auto;
+}
+
+p#eight {
+  font-size: 5em;
+  margin: 20% auto;
+  color: white;
+}
+
+p#answer {
+  padding: 2.3vh;
+  color: lightblue;
+  letter-spacing: 0.2vh;
+  font-size: 1.8vh;
+}
+
+#question {
+  margin: 2vh;
+  padding: 1vh;
+  width: 40vh;
+  font-size: 2.2vh;
+}
+
+#info {
+  font-size: 2.2vh;
 }
