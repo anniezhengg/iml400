@@ -1,0 +1,65 @@
+body {
+    text-align: left;
+    display: grid;
+    height: 100vh;
+    background-color: #c39c6c;
+    color: #6f4c3c;
+    margin: auto;
+    width: 50%;
+    margin-top: 5vh;
+    font-family: "p22-underground", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+footer {
+    position: relative;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    text-align: center;
+    font-size: 12px;
+}
+
+.thoughts {
+    margin-bottom: 15vh;
+}
+
+.text {
+    color: #f3e3d3;
+}
+
+h1 {
+    margin-top: 10vh;
+    font-family: "p22-underground-sc", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+}
+
+h2 {
+    margin-top: 2vh;
+    font-family: "p22-underground-pc", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 20px;
+}
+
+iframe {
+    width: 30vh;
+    height: 30vh;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-template-rows: 40vh 40vh;
+  
+}
+
+.mouse {
+    color: #685cd5;
+}
+
+.mouse:hover {
+    color: #ab57ac;
+}
