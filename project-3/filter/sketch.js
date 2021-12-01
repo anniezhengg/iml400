@@ -1,9 +1,3 @@
-//Annie Zheng
-//IML 400
-//September 30 2021
-//Exercise 3
-//I decided to create a camera filter that you can toggle on and off by moving your mouse around. The camera filter follows mouseY, meaning that you can control how much of your camera is obscured by the filter. There are no particular inspirations for this filter – I just thought it might be interesting to have some way to manipulate the height of the filter.
-
 let cam;
 let poseNet;
 let pose;
@@ -19,10 +13,13 @@ function setup() {
   cam.hide();
   noStroke();
   
+  poseNet.flipHorizontal = true;
+
+  
 }
 
 function gotPoses(poses) {
-  console.log(poses);
+  // console.log(poses);
   if (poses.length > 0) {
     pose = poses[0].pose;
     skeleton = poses[0].skeleton;
@@ -30,19 +27,18 @@ function gotPoses(poses) {
 }
 
 function modelLoaded() {
-  console.log("poseNet ready");
+  // console.log("poseNet ready");
 }
 
 
 function draw() {
   push();
-  poseNet.flipHorizontal = true;
+  translate(width, 0);
+  scale(-1, 1);
   image(cam, 0, 0, width, height);
   filter(GRAY);
   pop();
   
-  // poseNet.flipHorizontal = false;
-
   cam.loadPixels();
   
   if(pose){
@@ -52,7 +48,12 @@ function draw() {
       let colorFromVideo = cam.get(col, row);
       fill( colorFromVideo );
         noStroke();
-        ellipse(col,row, 20, 20);
+        // push();
+        // translate(width,0);
+        // scale(-1,1);
+      ellipse(col,row, 20, 20);
+      // pop(); 
+        
       
     }
   } 
