@@ -11,7 +11,7 @@ function setup() {
   poseNet.on("pose", gotPoses);
   pixelDensity(1);
   cam.hide();
-  noStroke();
+  // noStroke();
   
   poseNet.flipHorizontal = true;
 
@@ -42,6 +42,8 @@ function draw() {
   cam.loadPixels();
   
   if(pose){
+    fill(255);
+    ellipse(pose.rightWrist.x, pose.rightWrist.y, 20);
     //face
     for (col=pose.leftEar.x; col<=pose.rightEar.x; col+=20){
     for(row=pose.nose.y-100; row<=pose.rightWrist.y; row+=20){
