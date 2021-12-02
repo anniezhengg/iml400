@@ -10,6 +10,8 @@ let skeleton;
 let words = [];
 var textArray = ["why am i so fucking ugly?", "why are my eyes so small?", "why is my face so chubby?", "why can't i be prettier?", "is this why no one likes me?", "what is it like to be pretty?", "why is my nose so flat?", "why is my face so wide?", "why is my face asymmetrical?", "why do i look like that?", "i hate myself"];
 
+
+
 function setup() {
   createCanvas(640, 480);
   video = createCapture(VIDEO);
@@ -52,10 +54,14 @@ function draw() {
   poseNet.flipHorizontal = false;
   for (var i = 0; i < words.length; i++) {
     if (pose) {
-      //to see if i successfully flipped the video but not posenet points
-       fill(0, 0, 255);
-      circle(pose.leftWrist.x, pose.leftWrist.y, 50);
-      circle(pose.rightWrist.x, pose.rightWrist.y, 50);
+      //to see if i successfully flipped the video but not the text
+     
+      noStroke();
+       fill(255);
+      circle(pose.leftWrist.x, pose.leftWrist.y, 20);
+      circle(pose.rightWrist.x, pose.rightWrist.y, 20);
+      
+      
     
       //try to figure out how to load words around/behind head
       if(
