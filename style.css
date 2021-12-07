@@ -1,3 +1,81 @@
+
+body {
+    height: 100%;
+    background: radial-gradient(ellipse at bottom, #8c7cc4 0%, #45308a 100%);
+    background-attachment: fixed;
+    overflow: scroll;
+    text-align: left;
+    display: grid;
+    /* height: 60vh; */
+    /* background-color: #c39c6c; */
+    color: #bd9f6f;
+    margin: auto;
+    width: 50%;
+    margin-top: 5vh;
+    font-family: "p22-underground", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  footer {
+    position: relative;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    text-align: center;
+    font-size: 16px;
+  }
+  
+  .thoughts {
+    margin-bottom: 15vh;
+  }
+  
+  .text {
+    color: #f3e3d3;
+  }
+  
+  h1 {
+    margin-top: 10vh;
+    font-family: "p22-underground-sc", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+  }
+  
+  h2 {
+    margin-top: 2vh;
+    font-family: "p22-underground-pc", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 20px;
+  }
+  
+  iframe {
+    width: 30vh;
+    height: 30vh;
+  }
+  
+  .grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: 40vh 40vh;
+  }
+  
+  a {
+    color: #8992c4;
+  }
+  
+  a:visited {
+    color: #8992c4;
+  }
+  
+  a:hover {
+    color: #ab57ac;
+    cursor: pointer;
+  }
+  
+  
+  
+
 /* stars code adapted from https://codepen.io/saransh/pen/BKJun */
 
 #stars {
@@ -562,77 +640,4 @@
   to {
     transform: translateY(-2000px);
   }
-}
-
-body {
-  height: 100%;
-  background: radial-gradient(ellipse at bottom, #8c7cc4 0%, #45308a 100%);
-  background-attachment: fixed;
-  overflow: scroll;
-  text-align: left;
-  display: grid;
-  /* height: 60vh; */
-  /* background-color: #c39c6c; */
-  color: #bd9f6f;
-  margin: auto;
-  width: 50%;
-  margin-top: 5vh;
-  font-family: "p22-underground", sans-serif;
-  font-weight: 400;
-  font-style: normal;
-}
-
-footer {
-  position: relative;
-  bottom: 0px;
-  left: 0px;
-  right: 0px;
-  text-align: center;
-  font-size: 16px;
-}
-
-.thoughts {
-  margin-bottom: 15vh;
-}
-
-.text {
-  color: #f3e3d3;
-}
-
-h1 {
-  margin-top: 10vh;
-  font-family: "p22-underground-sc", sans-serif;
-  font-weight: 600;
-  font-style: normal;
-}
-
-h2 {
-  margin-top: 2vh;
-  font-family: "p22-underground-pc", sans-serif;
-  font-weight: 600;
-  font-style: normal;
-  font-size: 20px;
-}
-
-iframe {
-  width: 30vh;
-  height: 30vh;
-}
-
-.grid-container {
-  display: grid;
-  grid-template-columns: auto auto auto;
-  grid-template-rows: 40vh 40vh;
-}
-
-a {
-  color: #8992c4;
-}
-
-a:visited {
-  color: #8992c4;
-}
-
-a:hover {
-  color: #ab57ac;
 }
